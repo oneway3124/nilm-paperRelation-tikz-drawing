@@ -1,0 +1,35 @@
+% research direction relationship
+% wang.david
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{CJK}
+
+
+\begin{document}
+
+\usetikzlibrary {arrows.meta,graphs,graphdrawing} \usegdlibrary {layered}
+\tikz [nodes={text height=.7em, text depth=.2em,
+draw=black!20, thick, fill=white, font=\footnotesize}, >={Stealth[round,sep]}, rounded corners, semithick]
+\graph [layered layout, level distance=1cm, sibling sep=.5em, sibling distance=1cm] {
+"business problem"->"loc-aware disaggregation" -> { "localization", "disaggreation" };
+
+"localization"->{"dynamic localization","routing planning"};
+"dynamic localization"->{"particle filter LOC"};
+"routing planning"->{"MTSPs"}->"multiple mobile charger routing planning"->"CO1";
+"particle filter LOC"->{"PF/SMC"};
+{"PF/SMC"}->{"PF1"};
+"disaggreation"->{"dataset","HMM","NILM methods"};
+
+{"dataset","HMM"}->{"HHMM"};
+"HMM"->{"forward-backward","EM","viterbi"};
+{"HHMM","NILM methods"}->{"particle filter NILM"};
+
+{"particle filter NILM"}->{"PF2"};
+%"MTSPs"->"MTSP";
+{"NILM methods"}->{"Combinational Optimization"}->"CO2";
+
+%""->{"",""}; % bakcup
+{"localization information","load monitoring"}->{"human behavior"};
+};
+
+
+\end{document}
