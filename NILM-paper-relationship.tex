@@ -1,6 +1,12 @@
 % research direction relationship
 % run the tex using LuaLaTex on the Miktex
 % wang.david
+% for example
+% CharacterNilmWang or CharacterNILMWang name the papers 
+% 2019
+% {[same layer]2019,CharacterNilmWang },
+% ->CharacterNilmWang->CharacterNilmWang,
+% CharacterNilmWang .Full Name...
 \documentclass[tikz,border=10pt]{standalone}
 \usepackage{CJK}
 
@@ -10,28 +16,30 @@
 \usetikzlibrary {arrows.meta,graphs,graphdrawing} \usegdlibrary {layered}
 
 \tikz [rounded corners] \graph [layered layout] {
-1992 -> 2015 -> 2020;
-{ [same layer] 1992, Hart };
-{ [same layer] 2015 ,Powerblade },
-%{ [same layer] 1978, Formshell, csh },
-%{ [same layer] 1980, esh, vsh },
-%{ [same layer] 1982, ksh, "System-V" },
-%{ [same layer] 1984, v9sh, tcsh },
-%{ [same layer] 1986, "ksh-i" },
-%{ [same layer] 1988, KornShell ,Perl, rc },
-%{ [same layer] 2020, tcl, Bash },
-  Hart->{Powerblade},
-%{"HART-NILM"} -> { Powerblade, Bourne, csh -> tcsh},
-% Bourne -> { ksh, esh, vsh, "System-V", v9sh -> rc, Bash},
-% { "ksh-i", KornShell } -> Bash, { esh, vsh, Formshell, csh } -> ksh, { KornShell, "System-V" } ,
-% ksh -> "ksh-i" -> KornShell,
-% Bourne -> Formshell,
-{}
-%{ [edge={draw=none}]
-%Bash -> tcl,
-%KornShell -> Perl
-%}
+1992 -> 2014 -> 2015 -> 2016 -> 2018 -> 2019 ->2020;
+{ [same layer] 1992,  OrigNilmHart };
+{ [same layer] 2014 , NILMTKBatra},
+{ [same layer] 2015 , SparseNILMMakonin },
+{ [same layer] 2016 , SeqtopNeuralNetNilmZhong,DnnHmmNilmMauch,HybridNilmKong},
+{ [same layer] 2018 , HhmmNILMKong,ExtenNilmKong,DeepDisagBarsim },
+{ [same layer] 2019 , TransferNilmZhong},
+
+  OrigNilmHart->{NILMTKBatra,SparseNILMMakonin,HybridNilmKong,ExtenNilmKong,SeqtopNeuralNetNilmZhong,DnnHmmNilmMauch,},
+  SeqtopNeuralNetNilmZhong->TransferNilmZhong,
+  DnnHmmNilmMauch->DeepDisagBarsim,
+  HybridNilmKong->HhmmNILMKong,
+  NILMTKBatra->ExtenNilmKong,
+
+
 };
 
 
 \end{document}
+
+% OrigNilmHart, nintrusive appliance load monitoring
+% 2014
+% NILMTKBatra,   NILMTK: An open source toolkit for non-intrusive load monitoring
+% 2016
+% HybridNilmKong, Improving nonintrusive load monitoring efficiency via a hybrid programming method
+% 2018 
+% DeepDisagBarsim, On the Feasibility of Generic Deep Disaggregation for Single-Load Extraction
