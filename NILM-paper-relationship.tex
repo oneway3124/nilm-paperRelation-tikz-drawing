@@ -1,0 +1,37 @@
+% research direction relationship
+% run the tex using LuaLaTex on the Miktex
+% wang.david
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{CJK}
+
+
+\begin{document}
+
+\usetikzlibrary {arrows.meta,graphs,graphdrawing} \usegdlibrary {layered}
+
+\tikz [rounded corners] \graph [layered layout] {
+1992 -> 2015 -> 2020;
+{ [same layer] 1992, Hart };
+{ [same layer] 2015 ,Powerblade },
+%{ [same layer] 1978, Formshell, csh },
+%{ [same layer] 1980, esh, vsh },
+%{ [same layer] 1982, ksh, "System-V" },
+%{ [same layer] 1984, v9sh, tcsh },
+%{ [same layer] 1986, "ksh-i" },
+%{ [same layer] 1988, KornShell ,Perl, rc },
+%{ [same layer] 2020, tcl, Bash },
+  Hart->{Powerblade},
+%{"HART-NILM"} -> { Powerblade, Bourne, csh -> tcsh},
+% Bourne -> { ksh, esh, vsh, "System-V", v9sh -> rc, Bash},
+% { "ksh-i", KornShell } -> Bash, { esh, vsh, Formshell, csh } -> ksh, { KornShell, "System-V" } ,
+% ksh -> "ksh-i" -> KornShell,
+% Bourne -> Formshell,
+{}
+%{ [edge={draw=none}]
+%Bash -> tcl,
+%KornShell -> Perl
+%}
+};
+
+
+\end{document}
