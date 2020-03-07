@@ -16,19 +16,26 @@
 \usetikzlibrary {arrows.meta,graphs,graphdrawing} \usegdlibrary {layered}
 
 \tikz [rounded corners] \graph [layered layout] {
-1992 -> 2014 -> 2015 -> 2016 -> 2018 -> 2019 ->2020;
+1992 -> 2008 -> 2009 ->2010-> 2011 -> 2012 -> 2013->2014 -> 2015 -> 2016 -> 2018 -> 2019 ->2020;
 { [same layer] 1992,  OrigNilmHart };
-{ [same layer] 2014 , NILMTKBatra},
-{ [same layer] 2015 , SparseNILMMakonin },
+{ [same layer] 2008,  LoadNilmChang},
+{ [same layer] 2009,  x},
+{ [same layer] 2010,  EnhanceNilmBerges},
+{ [same layer] 2011,  y},
+{ [same layer] 2012,  z},
+{ [same layer] 2013,  AMPdsMakonin},
+{ [same layer] 2014 , NILMTKBatra,PALDIEgater,RealLDWong},
+{ [same layer] 2015 , SparseNILMMakonin,NILMevluaMakonin },
 { [same layer] 2016 , SeqtopNeuralNetNilmZhong,DnnHmmNilmMauch,HybridNilmKong},
 { [same layer] 2018 , HhmmNILMKong,ExtenNilmKong,DeepDisagBarsim },
 { [same layer] 2019 , TransferNilmZhong},
 
-  OrigNilmHart->{NILMTKBatra,SparseNILMMakonin,HybridNilmKong,ExtenNilmKong,SeqtopNeuralNetNilmZhong,DnnHmmNilmMauch,},
+  OrigNilmHart->{x,y,z,AMPdsMakonin,RealLDWong,PALDIEgater,LoadNilmChang,EnhanceNilmBerges,NILMTKBatra,SparseNILMMakonin,HybridNilmKong,SeqtopNeuralNetNilmZhong,DnnHmmNilmMauch,},
   SeqtopNeuralNetNilmZhong->TransferNilmZhong,
   DnnHmmNilmMauch->DeepDisagBarsim,
-  HybridNilmKong->HhmmNILMKong,
-  NILMTKBatra->ExtenNilmKong,
+  {PALDIEgater,RealLDWong,HybridNilmKong}->HhmmNILMKong,
+ {LoadNilmChang,EnhanceNilmBerges,NILMTKBatra,NILMevluaMakonin}->ExtenNilmKong,
+  AMPdsMakonin->ExtenNilmKong,
 
 
 };
@@ -36,9 +43,17 @@
 
 \end{document}
 
+% 1992
 % OrigNilmHart, nintrusive appliance load monitoring
+% 2008
+% LoadNilmChang, LoadRecognition for Different Loads with the Same Real Power and Reactive Power in a Non-intrusive Load-monitoring System
+% 2010
 % 2014
+% PALDIEgater,  PALDi: Online Load Disaggregation via Particle Filtering
 % NILMTKBatra,   NILMTK: An open source toolkit for non-intrusive load monitoring
+% RealLDWong,    Real-time load disaggregation algorithm using particle-based distribution truncation with state occupancy model
+% 2015
+% NILMevluaMakonin, Nonintrusive Load Monitoring (NILM) Performance Evaluation
 % 2016
 % HybridNilmKong, Improving nonintrusive load monitoring efficiency via a hybrid programming method
 % 2018 
