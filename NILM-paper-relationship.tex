@@ -25,7 +25,7 @@
 { [same layer] 2010,  EnhanceNilmBerges},
 { [same layer] 2011,  REDDKolter,UnsupNilmKim,UsingHmmNilmParson},
 { [same layer] 2012,  PriorNilmParson,ApprFhmmDisaggKolter},
-{ [same layer] 2013,  AMPdsMakonin,NILMEvalCicchetti},
+{ [same layer] 2013,  AMPdsMakonin,NILMEvalCicchetti,PFAppEstEgater},
 { [same layer] 2014 , NILMTKBatra,PALDIEgater,RealLDWong,UnsupNilmPhdParson},
 { [same layer] 2015 , SparseNILMMakonin,NILMevluaMakonin,LocEDNambi },
 { [same layer] 2016 , DnnHmmNilmMauch,HybridNilmKong},
@@ -38,6 +38,7 @@
   SeqtopNeuralNetNilmZhong->TransferNilmZhong,
   DnnHmmNilmMauch->DeepDisagBarsim,
   {UnsupNilmKim,NILMTKBatra,REDDKolter,PriorNilmParson,PALDIEgater,RealLDWong,HybridNilmKong}->HhmmNILMKong->{BayesBLSTMNilmKaselimi,NewDeNilmZhang},
+  PFAppEstEgater->PALDIEgater,
  {UnsupNilmKim,REDDKolter,PriorNilmParson,LoadNilmChang,EnhanceNilmBerges,NILMTKBatra,NILMevluaMakonin}->ExtenNilmKong,
   {NILMEvalCicchetti,IntegerNilmSuzuki,UsingHmmNilmParson,UnsupNilmPhdParson,AMPdsMakonin,ApprFhmmDisaggKolter,SparseNILMMakonin}->ExtenNilmKong,
   {ExtenNilmKong,HybridNilmKong}->OptiOpKong,
@@ -73,6 +74,7 @@
 % 2013
 % AMPdsMakonin, AMPds: A public dataset for load disaggregation and eco-feedback research
 % NILMEvalCicchetti,     NILM-Eval disaggregation of real-world electricity consumption data
+% PFAppEstEgater,      Appliance State Estimation based on Particle Filtering
 % 2014
 % PALDIEgater,  PALDi: Online Load Disaggregation via Particle Filtering
 % NILMTKBatra,   NILMTK: An open source toolkit for non-intrusive load monitoring
