@@ -17,8 +17,9 @@
 \usetikzlibrary {arrows.meta,graphs,graphdrawing} \usegdlibrary {layered}
 
 \tikz [rounded corners] \graph [layered layout] {
-1992 -> 2008 -> 2009 ->2010-> 2011 -> 2012 -> 2013->2014 -> 2015 -> 2016 ->2017 -> 2018 -> 2019 ->2020;
+1992 -> 1996 ->2008 -> 2009 ->2010-> 2011 -> 2012 -> 2013->2014 -> 2015 -> 2016 ->2017 -> 2018 -> 2019 ->2020;
 { [same layer] 1992,  OrigNilmHart };
+{ [same layer] 1996,  NielmLeeb},
 { [same layer] 2008,  LoadNilmChang},
 { [same layer] 2009,  SvmNilmKato},
 { [same layer] 2010,  EnhanceNilmBerges},
@@ -31,9 +32,9 @@
 { [same layer] 2017 , SeqtopNeuralNetNilmZhong},
 { [same layer] 2018 , HhmmNILMKong,ExtenNilmKong,DeepDisagBarsim },
 { [same layer] 2019 , MLSumNilmNalm},
-{ [same layer] 2020 , TransferNilmZhong,OptiOpKong},
+{ [same layer] 2020 , TransferNilmZhong,OptiOpKong,HybEvnNilmLu},
 
-  OrigNilmHart->{MLSumNilmNalm,SvmNilmKato,REDDKolter,PriorNilmParson,AMPdsMakonin,RealLDWong,PALDIEgater,LoadNilmChang,EnhanceNilmBerges,NILMTKBatra,SparseNILMMakonin,HybridNilmKong,SeqtopNeuralNetNilmZhong,DnnHmmNilmMauch,},
+  OrigNilmHart->{HybEvnNilmLu,MLSumNilmNalm,SvmNilmKato,REDDKolter,PriorNilmParson,AMPdsMakonin,RealLDWong,PALDIEgater,LoadNilmChang,EnhanceNilmBerges,NILMTKBatra,SparseNILMMakonin,HybridNilmKong,SeqtopNeuralNetNilmZhong,DnnHmmNilmMauch,},
   SeqtopNeuralNetNilmZhong->TransferNilmZhong,
   DnnHmmNilmMauch->DeepDisagBarsim,
   {UnsupNilmKim,NILMTKBatra,REDDKolter,PriorNilmParson,PALDIEgater,RealLDWong,HybridNilmKong}->HhmmNILMKong,
@@ -41,6 +42,7 @@
   AMPdsMakonin->ExtenNilmKong,
   HhmmNILMKong<->ExtenNilmKong,
   {ExtenNilmKong,HybridNilmKong}->OptiOpKong,
+   NielmLeeb->HybEvnNilmLu,
 
 };
 
@@ -49,6 +51,8 @@
 
 % 1992
 % OrigNilmHart, nintrusive appliance load monitoring
+% 1996
+% NielmLeeb,  Non-intrusive electrical load monitoring in commercial buildings based on steady-state and transient load-detection algorithms
 % 2008
 % LoadNilmChang, LoadRecognition for Different Loads with the Same Real Power and Reactive Power in a Non-intrusive Load-monitoring System
 % 2009
@@ -80,5 +84,6 @@
 % HhmmNILMKong,    A Hierarchical Hidden Markov Model Framework for Home Appliance Modeling
 % 2019    146
 % MLSumNilmNalm,    Machine learning approaches for non-intrusive load monitoring: from qualitative to quantitative comparation
-% 2020
+% 2020    10
 % OptiOpKong  Optimal Operation of Electric Springs for Voltage Regulation in Distribution Systems
+% HybEvnNilmLu, A Hybrid Event Detection Approach for Non-Intrusive Load Monitoring
