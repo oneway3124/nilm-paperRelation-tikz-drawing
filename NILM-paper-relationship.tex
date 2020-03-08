@@ -20,14 +20,14 @@
 1992 -> 1996 ->2008 -> 2009 ->2010-> 2011 -> 2012 -> 2013->2014 -> 2015 -> 2016 ->2017 -> 2018 -> 2019 ->2020;
 { [same layer] 1992,  OrigNilmHart };
 { [same layer] 1996,  NielmLeeb},
-{ [same layer] 2008,  LoadNilmChang},
+{ [same layer] 2008,  LoadNilmChang,IntegerNilmSuzuki},
 { [same layer] 2009,  SvmNilmKato},
 { [same layer] 2010,  EnhanceNilmBerges},
-{ [same layer] 2011,  REDDKolter,UnsupNilmKim},
+{ [same layer] 2011,  REDDKolter,UnsupNilmKim,UsingHmmNilmParson},
 { [same layer] 2012,  PriorNilmParson},
-{ [same layer] 2013,  AMPdsMakonin},
-{ [same layer] 2014 , NILMTKBatra,PALDIEgater,RealLDWong},
-{ [same layer] 2015 , SparseNILMMakonin,NILMevluaMakonin },
+{ [same layer] 2013,  AMPdsMakonin,NILMEvalCicchetti},
+{ [same layer] 2014 , NILMTKBatra,PALDIEgater,RealLDWong,UnsupNilmPhdParson},
+{ [same layer] 2015 , SparseNILMMakonin,NILMevluaMakonin,LocEDNambi },
 { [same layer] 2016 , DnnHmmNilmMauch,HybridNilmKong},
 { [same layer] 2017 , SeqtopNeuralNetNilmZhong},
 { [same layer] 2018 , HhmmNILMKong,ExtenNilmKong,DeepDisagBarsim },
@@ -39,10 +39,13 @@
   DnnHmmNilmMauch->DeepDisagBarsim,
   {UnsupNilmKim,NILMTKBatra,REDDKolter,PriorNilmParson,PALDIEgater,RealLDWong,HybridNilmKong}->HhmmNILMKong,
  {UnsupNilmKim,REDDKolter,PriorNilmParson,LoadNilmChang,EnhanceNilmBerges,NILMTKBatra,NILMevluaMakonin}->ExtenNilmKong,
-  AMPdsMakonin->ExtenNilmKong,
-  HhmmNILMKong<->ExtenNilmKong,
+  {NILMEvalCicchetti,IntegerNilmSuzuki,UsingHmmNilmParson,UnsupNilmPhdParson,AMPdsMakonin,ApprFhmmDisaggKolter,SparseNILMMakonin}->ExtenNilmKong,
+
+  % HhmmNILMKong<-ExtenNilmKong,
+  
   {ExtenNilmKong,HybridNilmKong}->OptiOpKong,
    NielmLeeb->HybEvnNilmLu,
+  {OrigNilmHart,REDDKolter,AMPdsMakonin,ApprFhmmDisaggKolter}->LocEDNambi,
 
 };
 
@@ -54,7 +57,8 @@
 % 1996
 % NielmLeeb,  Non-intrusive electrical load monitoring in commercial buildings based on steady-state and transient load-detection algorithms
 % 2008
-% LoadNilmChang, LoadRecognition for Different Loads with the Same Real Power and Reactive Power in a Non-intrusive Load-monitoring System
+% LoadNilmChang, Load Recognition for Different Loads with the Same Real Power and Reactive Power in a Non-intrusive Load-monitoring System
+% IntegerNilmSuzuki,   Nonintrusive Appliance Load Monitoring Based on Integer Programming
 % 2009
 % SvmNilmKato, Appliance recognition from electric current signals for information-energy integrated network in home environments
 % 2010
@@ -62,20 +66,26 @@
 % 2011
 % REDDKolter, REDD: A public data set for energy disaggregation research
 % UnsupNilmKim, Unsupervised Disaggregation of Low Frequency Power Measurements
+% UsingHmmNilmParson, Using hidden Markov models for iterative non-intrusive appliance monitoring
 % 2012
-% PriorNilmParson, Non-intrusive load monitoring using prior models of general appliance types
+% PriorNilmParson, Non-intrusive load monitoring using prior models of general appliance types
+% ApprFhmmDisaggKolter, Approximate inference in additive factorial HMMs with application to energy disaggregation
 % 2013
 % AMPdsMakonin, AMPds: A public dataset for load disaggregation and eco-feedback research
+% NILMEvalCicchetti,     NILM-Eval disaggregation of real-world electricity consumption data
 % 2014
 % PALDIEgater,  PALDi: Online Load Disaggregation via Particle Filtering
 % NILMTKBatra,   NILMTK: An open source toolkit for non-intrusive load monitoring
 % RealLDWong,    Real-time load disaggregation algorithm using particle-based distribution truncation with state occupancy model
+% UnsupNilmPhdParson, Unsupervised training methods for non-intrusive appliance load monitoring from smart meter data
 % 2015
 % SparseNILMMakonin, Exploiting HMM sparsity to perform online real-time nonintrusive load monitoring
 % NILMevluaMakonin, Nonintrusive Load Monitoring (NILM) Performance Evaluation
+%
+% LocEDNambi,   LocED: Location-aware Energy Disaggregation Framework
 % 2016
 % DnnHmmNilmMauch, A NOVEL DNN-HMM-BASED APPROACH FOR EXTRACTING SINGLE LOADS FROM AGGREGATE POWER SIGNALS
-% HybridNilmKong, Improving nonintrusive load monitoring efficiency via a hybrid programming method
+% HybridNilmKong, Improving non intrusive load monitoring efficiency via a hybrid programming method
 % 2017
 % SeqtopNeuralNetNilmZhong, Sequence-to-point learning with neural networks for nonintrusive load monitoring
 % 2018 
