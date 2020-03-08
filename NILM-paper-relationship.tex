@@ -24,7 +24,7 @@
 { [same layer] 2009,  SvmNilmKato},
 { [same layer] 2010,  EnhanceNilmBerges},
 { [same layer] 2011,  REDDKolter,UnsupNilmKim,UsingHmmNilmParson},
-{ [same layer] 2012,  PriorNilmParson},
+{ [same layer] 2012,  PriorNilmParson,ApprFhmmDisaggKolter},
 { [same layer] 2013,  AMPdsMakonin,NILMEvalCicchetti},
 { [same layer] 2014 , NILMTKBatra,PALDIEgater,RealLDWong,UnsupNilmPhdParson},
 { [same layer] 2015 , SparseNILMMakonin,NILMevluaMakonin,LocEDNambi },
@@ -40,12 +40,10 @@
   {UnsupNilmKim,NILMTKBatra,REDDKolter,PriorNilmParson,PALDIEgater,RealLDWong,HybridNilmKong}->HhmmNILMKong,
  {UnsupNilmKim,REDDKolter,PriorNilmParson,LoadNilmChang,EnhanceNilmBerges,NILMTKBatra,NILMevluaMakonin}->ExtenNilmKong,
   {NILMEvalCicchetti,IntegerNilmSuzuki,UsingHmmNilmParson,UnsupNilmPhdParson,AMPdsMakonin,ApprFhmmDisaggKolter,SparseNILMMakonin}->ExtenNilmKong,
-
-  % HhmmNILMKong<-ExtenNilmKong,
-  
   {ExtenNilmKong,HybridNilmKong}->OptiOpKong,
    NielmLeeb->HybEvnNilmLu,
   {OrigNilmHart,REDDKolter,AMPdsMakonin,ApprFhmmDisaggKolter}->LocEDNambi,
+  {NILMTKBatra,UnsupNilmKim,ApprFhmmDisaggKolter,REDDKolter,PriorNilmParson,SeqtopNeuralNetNilmZhong}->SubNilmShin,
 
 };
 
