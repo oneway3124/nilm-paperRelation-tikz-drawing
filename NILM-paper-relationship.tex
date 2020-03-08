@@ -7,6 +7,7 @@
 % {[same layer]2019,CharacterNilmWang },
 % ->CharacterNilmWang->CharacterNilmWang,
 % CharacterNilmWang .Full Name...
+% Web of Science Core Collection 968
 \documentclass[tikz,border=10pt]{standalone}
 \usepackage{CJK}
 
@@ -21,7 +22,7 @@
 { [same layer] 2008,  LoadNilmChang},
 { [same layer] 2009,  SvmNilmKato},
 { [same layer] 2010,  EnhanceNilmBerges},
-{ [same layer] 2011,  REDDKolter},
+{ [same layer] 2011,  REDDKolter,UnsupNilmKim},
 { [same layer] 2012,  PriorNilmParson},
 { [same layer] 2013,  AMPdsMakonin},
 { [same layer] 2014 , NILMTKBatra,PALDIEgater,RealLDWong},
@@ -29,16 +30,17 @@
 { [same layer] 2016 , DnnHmmNilmMauch,HybridNilmKong},
 { [same layer] 2017 , SeqtopNeuralNetNilmZhong},
 { [same layer] 2018 , HhmmNILMKong,ExtenNilmKong,DeepDisagBarsim },
-{ [same layer] 2019 , TransferNilmZhong},
-{ [same layer] 2020 , TransferNilmZhong},
+{ [same layer] 2019 , MLSumNilmNalm},
+{ [same layer] 2020 , TransferNilmZhong,OptiOpKong},
 
-  OrigNilmHart->{SvmNilmKato,REDDKolter,PriorNilmParson,AMPdsMakonin,RealLDWong,PALDIEgater,LoadNilmChang,EnhanceNilmBerges,NILMTKBatra,SparseNILMMakonin,HybridNilmKong,SeqtopNeuralNetNilmZhong,DnnHmmNilmMauch,},
+  OrigNilmHart->{MLSumNilmNalm,SvmNilmKato,REDDKolter,PriorNilmParson,AMPdsMakonin,RealLDWong,PALDIEgater,LoadNilmChang,EnhanceNilmBerges,NILMTKBatra,SparseNILMMakonin,HybridNilmKong,SeqtopNeuralNetNilmZhong,DnnHmmNilmMauch,},
   SeqtopNeuralNetNilmZhong->TransferNilmZhong,
   DnnHmmNilmMauch->DeepDisagBarsim,
-  {NILMTKBatra,REDDKolter,PriorNilmParson,PALDIEgater,RealLDWong,HybridNilmKong}->HhmmNILMKong,
- {REDDKolter,PriorNilmParson,LoadNilmChang,EnhanceNilmBerges,NILMTKBatra,NILMevluaMakonin}->ExtenNilmKong,
+  {UnsupNilmKim,NILMTKBatra,REDDKolter,PriorNilmParson,PALDIEgater,RealLDWong,HybridNilmKong}->HhmmNILMKong,
+ {UnsupNilmKim,REDDKolter,PriorNilmParson,LoadNilmChang,EnhanceNilmBerges,NILMTKBatra,NILMevluaMakonin}->ExtenNilmKong,
   AMPdsMakonin->ExtenNilmKong,
-
+  HhmmNILMKong<->ExtenNilmKong,
+  {ExtenNilmKong,HybridNilmKong}->OptiOpKong,
 
 };
 
@@ -54,6 +56,7 @@
 % 2010
 % 2011
 % REDDKolter, REDD: A public data set for energy disaggregation research
+% UnsupNilmKim, Unsupervised Disaggregation of Low Frequency Power Measurements
 % 2012
 % PriorNilmParson, Non-intrusive load monitoring using prior models of general appliance types
 % 2013
@@ -67,3 +70,7 @@
 % HybridNilmKong, Improving nonintrusive load monitoring efficiency via a hybrid programming method
 % 2018 
 % DeepDisagBarsim, On the Feasibility of Generic Deep Disaggregation for Single-Load Extraction
+% 2019
+% MLSumNilmNalm,    Machine learning approaches for non-intrusive load monitoring: from qualitative to quantitative comparation
+% 2020
+% OptiOpKong  Optimal Operation of Electric Springs for Voltage Regulation in Distribution Systems
