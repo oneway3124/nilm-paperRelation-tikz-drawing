@@ -17,74 +17,36 @@
 \usetikzlibrary {arrows.meta,graphs,graphdrawing} \usegdlibrary {layered}
 
 \tikz [rounded corners] \graph [layered layout] {
-2000 -> 2001->2011;
-{ [same layer] 2000,  OnSmc2000Doucet };
-{ [same layer] 2001,  Smc2001Doucet},
-{ [same layer] 2011,  TutorialPF2011Doucet},
+2000 -> 2001->2011->2015->2017->2018;
+{ [same layer] 2000,  OnsequentialDoucet };
+{ [same layer] 2001,  SmcPracticeDoucet},
+{ [same layer] 2011,  TutorialPFDoucet},
+{ [same layer] 2015,  OnparticleDoucet},
+{ [same layer] 2017,  FilterVarMaddison},
+{ [same layer] 2018,  VariationalSMCNaesseth},
 
-OnSmc2000Doucet->Smc2001Doucet->TutorialPF2011Doucet,
+
+OnsequentialDoucet->SmcPracticeDoucet->TutorialPFDoucet->{VariationalSMCNaesseth,AutoEncLe,FilterVarMaddison},
+OnsequentialDoucet->OnparticleDoucet,
 
 
 
 };
 
 % 2000
-% OnSmc2000Doucet On sequential Monte Carlo sampling methods for Bayesian filtering
+% OnsequentialDoucet       On sequential Monte Carlo sampling methods for Bayesian filtering
 % 2001
-% Smc2001Doucet Sequential Monte Carlo Methods in Practice
+% SmcPracticeDoucet         Sequential Monte Carlo Methods in Practice
 % 2011
-% TutorialPF2011Doucet  A tutorial on particle filtering and smoothing: Fifteen years later
-
-% 1992
-% OrigNilmHart, nintrusive appliance load monitoring
-% 1996
-% NielmLeeb,  Non-intrusive electrical load monitoring in commercial buildings based on steady-state and transient load-detection algorithms
-% 2008
-% LoadNilmChang, Load Recognition for Different Loads with the Same Real Power and Reactive Power in a Non-intrusive Load-monitoring System
-% IntegerNilmSuzuki,   Nonintrusive Appliance Load Monitoring Based on Integer Programming
-% 2009
-% SvmNilmKato, Appliance recognition from electric current signals for information-energy integrated network in home environments
-% 2010
-% EnhanceNilmBerges, Enhancing Electricity Audits in Residential Buildings with Nonintrusive Load Monitoring
-% 2011
-% REDDKolter, REDD: A public data set for energy disaggregation research
-% UnsupNilmKim, Unsupervised Disaggregation of Low Frequency Power Measurements
-% UsingHmmNilmParson, Using hidden Markov models for iterative non-intrusive appliance monitoring
-% 2012
-% PriorNilmParson, Non-intrusive load monitoring using prior models of general appliance types
-% ApprFhmmDisaggKolter, Approximate inference in additive factorial HMMs with application to energy disaggregation
-% 2013
-% AMPdsMakonin, AMPds: A public dataset for load disaggregation and eco-feedback research
-% NILMEvalCicchetti,     NILM-Eval disaggregation of real-world electricity consumption data
-% PFAppEstEgater,      Appliance State Estimation based on Particle Filtering
-% 2014
-% PALDIEgater,  PALDi: Online Load Disaggregation via Particle Filtering
-% NILMTKBatra,   NILMTK: An open source toolkit for non-intrusive load monitoring
-% RealLDWong,    Real-time load disaggregation algorithm using particle-based distribution truncation with state occupancy model
-% UnsupNilmPhdParson, Unsupervised training methods for non-intrusive appliance load monitoring from smart meter data
+% TutorialPFDoucet   A tutorial on particle filtering and smoothing: Fifteen years later
 % 2015
-% SparseNILMMakonin, Exploiting HMM sparsity to perform online real-time nonintrusive load monitoring
-% NILMevluaMakonin, Nonintrusive Load Monitoring (NILM) Performance Evaluation
-%
-% LocEDNambi,   LocED: Location-aware Energy Disaggregation Framework
-% 2016
-% DnnHmmNilmMauch, A NOVEL DNN-HMM-BASED APPROACH FOR EXTRACTING SINGLE LOADS FROM AGGREGATE POWER SIGNALS
-% HybridNilmKong, Improving non intrusive load monitoring efficiency via a hybrid programming method
+% OnparticleDoucet   On Particle Methods for Parameter Estimation in State-Space Models
 % 2017
-% SeqtopNeuralNetNilmZhong, Sequence-to-point learning with neural networks for nonintrusive load monitoring
-% 2018 
-% DeepDisagBarsim, On the Feasibility of Generic Deep Disaggregation for Single-Load Extraction
-% ExtenNilmKong,   An Extensible Approach for Non-Intrusive Load Disaggregation With Smart Meter Data
-% HhmmNILMKong,    A Hierarchical Hidden Markov Model Framework for Home Appliance Modeling
-% GraphNildHe,   Non-Intrusive Load Disaggregation Using Graph Signal Processing
-% 2019    146
-% MLSumNilmNalm,    Machine learning approaches for non-intrusive load monitoring: from qualitative to quantitative comparation
-% SubNilmShin, Subtask Gated Networks for Non-Intrusive Load Monitoring
-% BayesBLSTMNilmKaselimi,   Bayesian-optimized Bidirectional LSTM Regression Model for Non-intrusive Load Monitoring
-% NewDeNilmZhang, New Appliance Detection for Nonintrusive Load Monitoring
-% 2020    10
-% OptiOpKong  Optimal Operation of Electric Springs for Voltage Regulation in Distribution Systems
-% HybEvnNilmLu, A Hybrid Event Detection Approach for Non-Intrusive Load Monitoring
-% PraticalDLKong,  A Practical Solution for Non-Intrusive Type II Load Monitoring Based on Deep Learning and Post-Processing
+% FilterVarMaddison   Filtering Variational Objectives
+% 2018
+% VariationalSMCNaesseth Variational Sequential Monte Carlo
+% AutoEncLe   AUTO-ENCODING SEQUENTIAL MONTE CARLO
+
+
 
 \end{document}
