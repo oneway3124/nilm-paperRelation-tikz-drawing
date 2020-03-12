@@ -17,35 +17,39 @@
 \usetikzlibrary {arrows.meta,graphs,graphdrawing} \usegdlibrary {layered}
 
 \tikz [rounded corners] \graph [layered layout] {
-2000 -> 2001->2011->2015->2017->2018;
+2000 -> 2011-> 2015-> 2017-> 2018;
 { [same layer] 2000,  OnsequentialDoucet };
-{ [same layer] 2001,  SmcPracticeDoucet},
+%{ [same layer] 2001,  SmcPracticeDoucet},
 { [same layer] 2011,  TutorialPFDoucet},
 { [same layer] 2015,  OnparticleDoucet},
 { [same layer] 2017,  FilterVarMaddison},
-{ [same layer] 2018,  VariationalSMCNaesseth},
+{ [same layer] 2018,  AutoEncLe,VarSMCNaesseth},
 
 
-OnsequentialDoucet->SmcPracticeDoucet->TutorialPFDoucet->{VariationalSMCNaesseth,AutoEncLe,FilterVarMaddison},
+
+OnsequentialDoucet->TutorialPFDoucet,
 OnsequentialDoucet->OnparticleDoucet,
+TutorialPFDoucet->AutoEncLe,
+TutorialPFDoucet->FilterVarMaddison,
+TutorialPFDoucet->VarSMCNaesseth,
 
 
 
 };
 
 % 2000
-% OnsequentialDoucet       On sequential Monte Carlo sampling methods for Bayesian filtering
+% OnsequentialDoucet        On sequential Monte Carlo sampling methods for Bayesian filtering
 % 2001
 % SmcPracticeDoucet         Sequential Monte Carlo Methods in Practice
 % 2011
-% TutorialPFDoucet   A tutorial on particle filtering and smoothing: Fifteen years later
+% TutorialPFDoucet          A tutorial on particle filtering and smoothing: Fifteen years later
 % 2015
-% OnparticleDoucet   On Particle Methods for Parameter Estimation in State-Space Models
+% OnparticleDoucet          On Particle Methods for Parameter Estimation in State-Space Models
 % 2017
-% FilterVarMaddison   Filtering Variational Objectives
+% FilterVarMaddison         Filtering Variational Objectives
 % 2018
-% VariationalSMCNaesseth Variational Sequential Monte Carlo
-% AutoEncLe   AUTO-ENCODING SEQUENTIAL MONTE CARLO
+% VarSMCNaesseth            Variational Sequential Monte Carlo
+% AutoEncLe                 AUTO-ENCODING SEQUENTIAL MONTE CARLO
 
 
 
