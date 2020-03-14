@@ -25,11 +25,11 @@
 { [same layer] 2010,  EnhanceNilmBerges},
 { [same layer] 2011,  REDDKolter,UnsupNilmKim,UsingHmmNilmParson},
 { [same layer] 2012,  PriorNilmParson,ApprFhmmDisaggKolter},
-{ [same layer] 2013,  AMPdsMakonin,NILMEvalCicchetti,PFAppEstEgater},
+{ [same layer] 2013,  AMPdsMakonin,PFAppEstEgater},
 { [same layer] 2014 , NILMTKBatra,PALDIEgater,RealLDWong,UnsupNilmPhdParson},
 { [same layer] 2015 , SparseNILMMakonin,NILMevluaMakonin,LocEDNambi },
 { [same layer] 2016 , DnnHmmNilmMauch,HybridNilmKong},
-{ [same layer] 2017 , SeqtopNeuralNetNilmZhong},
+{ [same layer] 2017 , SeqtopNeuralNetNilmZhong,FrameNilmWongPhd},
 { [same layer] 2018 , HhmmNILMKong,ExtenNilmKong,DeepDisagBarsim,GraphNildHe },
 { [same layer] 2019 , MLSumNilmNalm,SubNilmShin,BayesBLSTMNilmKaselimi,NewDeNilmZhang},
 { [same layer] 2020 , TransferNilmZhong,OptiOpKong,HybEvnNilmLu,PraticalDLKong},
@@ -40,13 +40,14 @@
   {UnsupNilmKim,NILMTKBatra,REDDKolter,PriorNilmParson,PALDIEgater,RealLDWong,HybridNilmKong}->HhmmNILMKong->{BayesBLSTMNilmKaselimi,NewDeNilmZhang},
   PFAppEstEgater->PALDIEgater,
  {UnsupNilmKim,REDDKolter,PriorNilmParson,LoadNilmChang,EnhanceNilmBerges,NILMTKBatra,NILMevluaMakonin}->ExtenNilmKong,
-  {NILMEvalCicchetti,IntegerNilmSuzuki,UsingHmmNilmParson,UnsupNilmPhdParson,AMPdsMakonin,ApprFhmmDisaggKolter,SparseNILMMakonin}->ExtenNilmKong,
+  {IntegerNilmSuzuki,UsingHmmNilmParson,UnsupNilmPhdParson,AMPdsMakonin,ApprFhmmDisaggKolter,SparseNILMMakonin}->ExtenNilmKong,
   {ExtenNilmKong,HybridNilmKong}->OptiOpKong,
    NielmLeeb->HybEvnNilmLu,
   {OrigNilmHart,REDDKolter,AMPdsMakonin,ApprFhmmDisaggKolter}->LocEDNambi,
   {NILMTKBatra,UnsupNilmKim,ApprFhmmDisaggKolter,REDDKolter,PriorNilmParson,SeqtopNeuralNetNilmZhong}->SubNilmShin,
   SvmNilmKato->MLSumNilmNalm,
   {GraphNildHe,SeqtopNeuralNetNilmZhong,HhmmNILMKong,DeepDisagBarsim}->PraticalDLKong,
+  RealLDWong->FrameNilmWongPhd,
 
 };
 
@@ -90,6 +91,7 @@
 % HybridNilmKong, Improving non intrusive load monitoring efficiency via a hybrid programming method
 % 2017
 % SeqtopNeuralNetNilmZhong, Sequence-to-point learning with neural networks for nonintrusive load monitoring
+% FrameNilmWongPhd A non intrusive load monitoring framework for robust real time disaggregation
 % 2018 
 % DeepDisagBarsim, On the Feasibility of Generic Deep Disaggregation for Single-Load Extraction
 % ExtenNilmKong,   An Extensible Approach for Non-Intrusive Load Disaggregation With Smart Meter Data
@@ -104,5 +106,6 @@
 % OptiOpKong  Optimal Operation of Electric Springs for Voltage Regulation in Distribution Systems
 % HybEvnNilmLu, A Hybrid Event Detection Approach for Non-Intrusive Load Monitoring
 % PraticalDLKong,  A Practical Solution for Non-Intrusive Type II Load Monitoring Based on Deep Learning and Post-Processing
+% TransferNilmZhong transfer learning for non intrusive load monitoring
 
 \end{document}
