@@ -21,7 +21,7 @@
 { [same layer] 2000,  OnsequentialDoucet };
 %{ [same layer] 2001,  SmcPracticeDoucet},
 { [same layer] 2011,  TutorialPFDoucet},
-{ [same layer] 2015,  OnparticleDoucet},
+{ [same layer] 2015,  OnparticleDoucet,ResamplePFLi},
 { [same layer] 2017,  FilterVarMaddison},
 { [same layer] 2018,  AutoEncLe,VarSMCNaesseth},
 
@@ -32,6 +32,7 @@ OnsequentialDoucet->OnparticleDoucet,
 TutorialPFDoucet->AutoEncLe,
 TutorialPFDoucet->FilterVarMaddison,
 TutorialPFDoucet->VarSMCNaesseth,
+TutorialPFDoucet->ResamplePFLi,
 
 
 
@@ -45,6 +46,7 @@ TutorialPFDoucet->VarSMCNaesseth,
 % TutorialPFDoucet          A tutorial on particle filtering and smoothing: Fifteen years later
 % 2015
 % OnparticleDoucet          On Particle Methods for Parameter Estimation in State-Space Models
+% ResamplePFLi              Resampling methods for particle filtering
 % 2017
 % FilterVarMaddison         Filtering Variational Objectives
 % 2018

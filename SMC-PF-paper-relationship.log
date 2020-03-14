@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.12.0 (MiKTeX 2.9.7300 64-bit)  (format=lualatex 2020.3.4)  12 MAR 2020 10:32
+This is LuaTeX, Version 1.12.0 (MiKTeX 2.9.7300 64-bit)  (format=lualatex 2020.3.4)  14 MAR 2020 16:16
  restricted system commands enabled.
 **SMC-PF-paper-relationship.tex
 (./SMC-PF-paper-relationship.tex
@@ -596,17 +596,17 @@ File: pgflibrarygraphdrawing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 aper-relationship.aux))
 
 Here is how much of LuaTeX's memory you used:
- 15480 strings out of 481370
+ 15499 strings out of 481370
  125016,662416 words of node,token memory allocated
  413 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 48 glue_spec,
  5 attribute_list, 2 write nodes
-   avail lists: 1:8,2:1663,3:625,4:13,5:32,6:1,7:2101,9:328,11:44
- 32083 multiletter control sequences out of 65536+200000
+   avail lists: 1:9,2:1809,3:681,4:13,5:32,6:1,7:2295,9:356,11:48
+ 32102 multiletter control sequences out of 65536+200000
  25 fonts using 3258707 bytes
  68i,10n,65p,425b,1237s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/program files/miktex 2.9/fonts/opentype/public/lm/lmroman10-regular.otf>
-Output written on SMC-PF-paper-relationship.pdf (1 page, 8162 bytes).
+Output written on SMC-PF-paper-relationship.pdf (1 page, 8428 bytes).
 
 PDF statistics: 16 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
