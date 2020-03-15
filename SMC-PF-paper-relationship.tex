@@ -23,7 +23,7 @@
 { [same layer] 2011,  TutorialPFDoucet},
 { [same layer] 2015,  OnparticleDoucet,ResamplePFLi},
 { [same layer] 2017,  FilterVarMaddison},
-{ [same layer] 2018,  AutoEncLe,VarSMCNaesseth,DiffPFJonsch},
+{ [same layer] 2018,  AutoEncLe,VarSMCNaesseth,DiffPFJonsch,ParticleFilterNetKarkus},
 { [same layer] 2019,  PfRnnMa},
 { [same layer] 2020,  DisPFMa},
 
@@ -39,6 +39,7 @@ TutorialPFDoucet->ResamplePFLi,
 VarSMCNaesseth->DisPFMa,
 PfRnnMa->DisPFMa,
 DiffPFJonsch->PfRnnMa,
+ParticleFilterNetKarkus->PfRnnMa,
 
 
 };
@@ -58,6 +59,7 @@ DiffPFJonsch->PfRnnMa,
 % VarSMCNaesseth            Variational Sequential Monte Carlo
 % AutoEncLe                 AUTO-ENCODING SEQUENTIAL MONTE CARLO
 % DiffPFJonsch              differentiable particle filters end to end learning with algorithmic priors
+% ParticleFilterNetKarkus particle filter network with application to visual localization
 % 2019
 % PfRnnMa                  particle filter recurrent neural networks
 % 2020
