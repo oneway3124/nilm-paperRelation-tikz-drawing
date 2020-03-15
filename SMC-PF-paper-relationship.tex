@@ -17,13 +17,14 @@
 \usetikzlibrary {arrows.meta,graphs,graphdrawing} \usegdlibrary {layered}
 
 \tikz [rounded corners] \graph [layered layout] {
-2000 -> 2011-> 2015-> 2017-> 2018 -> 2020;
+2000 -> 2011-> 2015-> 2017-> 2018 ->2019 -> 2020;
 { [same layer] 2000,  OnsequentialDoucet };
 %{ [same layer] 2001,  SmcPracticeDoucet},
 { [same layer] 2011,  TutorialPFDoucet},
 { [same layer] 2015,  OnparticleDoucet,ResamplePFLi},
 { [same layer] 2017,  FilterVarMaddison},
-{ [same layer] 2018,  AutoEncLe,VarSMCNaesseth},
+{ [same layer] 2018,  AutoEncLe,VarSMCNaesseth,DiffPFJonsch},
+{ [same layer] 2019,  PfRnnMa},
 { [same layer] 2020,  DisPFMa},
 
 
@@ -35,7 +36,9 @@ TutorialPFDoucet->AutoEncLe->DisPFMa,
 TutorialPFDoucet->FilterVarMaddison,
 TutorialPFDoucet->VarSMCNaesseth,
 TutorialPFDoucet->ResamplePFLi,
-
+VarSMCNaesseth->DisPFMa,
+PfRnnMa->DisPFMa,
+DiffPFJonsch->PfRnnMa,
 
 
 };
@@ -54,6 +57,9 @@ TutorialPFDoucet->ResamplePFLi,
 % 2018
 % VarSMCNaesseth            Variational Sequential Monte Carlo
 % AutoEncLe                 AUTO-ENCODING SEQUENTIAL MONTE CARLO
+% DiffPFJonsch              differentiable particle filters end to end learning with algorithmic priors
+% 2019
+% PfRnnMa                  particle filter recurrent neural networks
 % 2020
 % DisPFMa                   discriminative particle filter reinforcement learning
 
