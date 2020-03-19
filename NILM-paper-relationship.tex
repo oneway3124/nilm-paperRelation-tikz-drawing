@@ -25,20 +25,20 @@
 { [same layer] 2010,  EnhanceNilmBerges},
 { [same layer] 2011,  REDDKolter,UnsupNilmKim,UsingHmmNilmParson},
 { [same layer] 2012,  PriorNilmParson,ApprFhmmDisaggKolter},
-{ [same layer] 2013,  AMPdsMakonin,PFAppEstEgater},
+{ [same layer] 2013,  AMPdsMakonin,PFAppEstEgater,EvolIPNilmEgarter},
 { [same layer] 2014 , NILMTKBatra,PALDIEgater,RealLDWong,UnsupNilmPhdParson},
 { [same layer] 2015 , SparseNILMMakonin,NILMevluaMakonin,LocEDNambi },
 { [same layer] 2016 , DnnHmmNilmMauch,HybridNilmKong},
 { [same layer] 2017 , SeqtopNeuralNetNilmZhong,FrameNilmWongPhd,ALIPNilmMakonin},
-{ [same layer] 2018 , HhmmNILMKong,ExtenNilmKong,DeepDisagBarsim,GraphNildHe },
-{ [same layer] 2019 , MLSumNilmNalm,SubNilmShin,BayesBLSTMNilmKaselimi,NewDeNilmZhang,HsmmNilmWong},
-{ [same layer] 2020 , TransferNilmZhong,OptiOpKong,HybEvnNilmLu,PraticalDLKong,InterProgNilmDash},
+{ [same layer] 2018 , HhmmNILMKong,ExtenNilmKong,DeepDisagBarsim,GraphNildHe,MILPNilmWittmann },
+{ [same layer] 2019 , MLSumNilmNalm,SubNilmShin,BayesBLSTMNilmKaselimi,NewDeNilmZhang,HsmmNilmWong,PraticalDLKong},
+{ [same layer] 2020 , TransferNilmZhong,OptiOpKong,HybEvnNilmLu,,InterProgNilmDash},
 
   OrigNilmHart->{NielmLeeb,SubNilmShin,GraphNildHe,HybEvnNilmLu,SvmNilmKato,REDDKolter,PriorNilmParson,AMPdsMakonin,RealLDWong,PALDIEgater,LoadNilmChang,EnhanceNilmBerges,NILMTKBatra,SparseNILMMakonin,HybridNilmKong,SeqtopNeuralNetNilmZhong,DnnHmmNilmMauch,},
   SeqtopNeuralNetNilmZhong->TransferNilmZhong,
   DnnHmmNilmMauch->DeepDisagBarsim,
   {UnsupNilmKim,NILMTKBatra,REDDKolter,PriorNilmParson,PALDIEgater,RealLDWong,HybridNilmKong}->HhmmNILMKong->{BayesBLSTMNilmKaselimi,NewDeNilmZhang},
-  PFAppEstEgater->PALDIEgater,
+  {PFAppEstEgater,EvolIPNilmEgarter}->PALDIEgater,
  {UnsupNilmKim,REDDKolter,PriorNilmParson,LoadNilmChang,EnhanceNilmBerges,NILMTKBatra,NILMevluaMakonin}->ExtenNilmKong,
   {IntegerNilmSuzuki,UsingHmmNilmParson,UnsupNilmPhdParson,AMPdsMakonin,ApprFhmmDisaggKolter,SparseNILMMakonin}->ExtenNilmKong,
   {ExtenNilmKong,HybridNilmKong}->OptiOpKong,
@@ -46,9 +46,9 @@
   {OrigNilmHart,REDDKolter,AMPdsMakonin,ApprFhmmDisaggKolter}->LocEDNambi,
   {NILMTKBatra,UnsupNilmKim,ApprFhmmDisaggKolter,REDDKolter,PriorNilmParson,SeqtopNeuralNetNilmZhong}->SubNilmShin,
   SvmNilmKato->MLSumNilmNalm,
-  {GraphNildHe,SeqtopNeuralNetNilmZhong,HhmmNILMKong,DeepDisagBarsim}->PraticalDLKong,
+  {GraphNildHe,SeqtopNeuralNetNilmZhong,HhmmNILMKong,DeepDisagBarsim}->PraticalDLKong->InterProgNilmDash,
   RealLDWong->{HsmmNilmWong,FrameNilmWongPhd},
-  {IntegerNilmSuzuki,ALIPNilmMakonin}->InterProgNilmDash,
+  {EvolIPNilmEgarter,IntegerNilmSuzuki,ALIPNilmMakonin,MILPNilmWittmann}->InterProgNilmDash,
 
 };
 
@@ -77,6 +77,7 @@
 % AMPdsMakonin, AMPds: A public dataset for load disaggregation and eco-feedback research
 % NILMEvalCicchetti,     NILM-Eval disaggregation of real-world electricity consumption data
 % PFAppEstEgater,      Appliance State Estimation based on Particle Filtering
+% EvolIPNilmEgarter Evolving_Non-Intrusive_Load_Monitoring
 % 2014
 % PALDIEgater,  PALDi: Online Load Disaggregation via Particle Filtering
 % NILMTKBatra,   NILMTK: An open source toolkit for non-intrusive load monitoring
@@ -99,6 +100,7 @@
 % ExtenNilmKong,   An Extensible Approach for Non-Intrusive Load Disaggregation With Smart Meter Data
 % HhmmNILMKong,    A Hierarchical Hidden Markov Model Framework for Home Appliance Modeling
 % GraphNildHe,   Non-Intrusive Load Disaggregation Using Graph Signal Processing
+% MILPNilmWittmann nonintrusive load monitoring algorithm using mixed integer linear programming
 % 2019    146
 % MLSumNilmNalm,    Machine learning approaches for non-intrusive load monitoring: from qualitative to quantitative comparation
 % SubNilmShin, Subtask Gated Networks for Non-Intrusive Load Monitoring
