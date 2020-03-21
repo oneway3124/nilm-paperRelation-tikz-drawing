@@ -1,7 +1,8 @@
 # 后续查看overleaf链接的更新！！
-NILM论文图谱
+
+问题发展脉络图-负荷分解
 https://cn.overleaf.com/read/ztbzwpgjkygf
-SMC论文图谱
+方法发展脉络图-粒子滤波
 https://cn.overleaf.com/read/fxfjqzzzmkjs
 
 # nilm 和 smc-pf 的pdf文件将以下的论文建立了基于时间脉络的问题发展脉络和方法发展脉络，必要的地方注意和定位领域的方法发展建立联系
